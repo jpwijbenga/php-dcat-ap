@@ -17,5 +17,8 @@
             "name": "Michiel Stornebrink",
             "email": "michielstornebrink@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "easyrdf/easyrdf": "^1.1"
+    }
 }
