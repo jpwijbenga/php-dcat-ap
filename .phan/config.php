@@ -23,6 +23,7 @@ return [
     'directory_list' => [
         'vendor',
         'src',
+        'tests',
     ],
 
     "analyzed_file_extensions" => [
