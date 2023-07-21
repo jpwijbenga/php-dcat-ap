@@ -1,0 +1,21 @@
+{
+    "name": "michiel-s/php-dcat-ap",
+    "description": "DCAT-AP library for PHP",
+    "type": "library",
+    "require-dev": {
+        "phan/phan": "^5.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MichielS\\PhpDcatAp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michiel Stornebrink",
+            "email": "michielstornebrink@gmail.com"
+        }
+    ],
+    "require": {}
+}
