@@ -10,4 +10,5 @@ use PHP_DCAT_AP\Attribute\URI;
 #[URI('rdfs:Resource:Dataset')]
 class Resource
 {
+    public string $uri;
 }

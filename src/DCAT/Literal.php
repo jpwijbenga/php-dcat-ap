@@ -2,6 +2,7 @@
 
 namespace PHP_DCAT_AP\DCAT;
 
+use EasyRdf\Literal as EasyRdfLiteral;
 use PHP_DCAT_AP\Attribute\URI;
 
 /**
@@ -9,6 +10,6 @@ use PHP_DCAT_AP\Attribute\URI;
  * Literals that contain human-readable text have an optional language tag as defined by BCP 47.
  */
 #[URI('rdfs:Literal')]
-class Literal
+class Literal extends EasyRdfLiteral
 {
 }

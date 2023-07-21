@@ -8,6 +8,6 @@ use PHP_DCAT_AP\Attribute\URI;
  * A conceptual entity that represents the information published.
  */
 #[URI('dcat:Dataset')]
-class Dataset
+class Dataset extends Resource
 {
 }

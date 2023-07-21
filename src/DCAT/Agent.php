@@ -9,6 +9,6 @@ use PHP_DCAT_AP\Attribute\URI;
  * If the Agent is an organization, the use of the Organization Ontology is recommended.
  */
 #[URI('foaf:Agent')]
-class Agent
+class Agent extends Resource
 {
 }
