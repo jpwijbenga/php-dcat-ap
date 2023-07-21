@@ -9,7 +9,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "MichielS\\PhpDcatAp\\": "src/"
+            "PHP_DCAT_AP\\": "src/"
         }
     },
     "authors": [
