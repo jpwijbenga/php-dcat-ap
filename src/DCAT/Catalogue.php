@@ -45,7 +45,8 @@ class Catalogue extends Resource
     #[URI('dct:title')]
     public array $title = [];
 
-    public function __construct()
+    public function __construct(string $uri)
     {
+        $this->uri = $uri;
     }
 }
