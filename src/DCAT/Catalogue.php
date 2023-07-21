@@ -27,14 +27,14 @@ class Catalogue extends Resource
      * This property can be repeated for parallel language versions of the description.
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
-    #[URI('dct:description')]
+    #[URI('http://purl.org/dc/terms/description')]
     public array $description = [];
 
     /**
      * This property refers to an entity (organisation) responsible for making the Catalogue available.
      * @var \PHP_DCAT_AP\DCAT\Agent
      */
-    #[URI('dct:publisher')]
+    #[URI('http://purl.org/dc/terms/publisher')]
     public Agent $publisher;
 
     /**
@@ -42,7 +42,7 @@ class Catalogue extends Resource
      * This property can be repeated for parallel language versions of the name.
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
-    #[URI('dct:title')]
+    #[URI('http://purl.org/dc/terms/title')]
     public array $title = [];
 
     public function __construct(string $uri)
