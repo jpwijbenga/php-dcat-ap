@@ -6,7 +6,7 @@ require(__DIR__ . '/../vendor/autoload.php');
 
 use PHP_DCAT_AP\DCAT\Catalogue;
 use PHP_DCAT_AP\DCAT\Literal;
-use PHP_DCAT_AP\Serialize\RdfSerializer;
+use PHP_DCAT_AP\Serializer\RdfSerializer;
 
 $cat = new Catalogue('test/cat/1');
 
