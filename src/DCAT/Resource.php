@@ -35,6 +35,12 @@ class Resource implements DCATClassInterface
     {
         $reflection = new ReflectionClass($this);
 
+        foreach (static::$REQUIRED_PROPERTIES as $property) {
+            if (!$reflection->hasProperty($property)) {
+                throw new \Exception("Mandatory property '{$property}' not defined for class '{$reflection->getName()}'");
+            }
+        }
+
         foreach ($reflection->getProperties() as $property) {
             if (
                 !in_array(
