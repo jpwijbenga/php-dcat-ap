@@ -15,6 +15,10 @@ class Catalogue extends Resource
         'dataset', 'description', 'publisher', 'title'
     ];
 
+    /**********************************************************************************************
+     * MANDATORY PROPERTIES
+     *********************************************************************************************/
+
     /**
      * This property links the Catalogue with a Dataset that is part of the Catalogue.
      * @var \PHP_DCAT_AP\DCAT\Dataset[]
@@ -45,6 +49,9 @@ class Catalogue extends Resource
     #[URI('http://purl.org/dc/terms/title')]
     public array $title = [];
 
+    /**********************************************************************************************
+     * RECOMMENDED PROPERTIES
+     *********************************************************************************************/
 
     /**********************************************************************************************
      * OPTIONAL PROPERTIES
