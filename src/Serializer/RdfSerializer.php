@@ -20,6 +20,9 @@ class RdfSerializer
 
     public function addSubject(DCATClassInterface $subject): void
     {
+        // Validate mandatory properties
+        $subject->checkRequiredProperties();
+
         $resource = $this->graph->resource($subject->getUri());
         
         $reflection = new ReflectionClass($subject);
