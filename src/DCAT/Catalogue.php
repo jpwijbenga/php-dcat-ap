@@ -7,7 +7,7 @@ use PHP_DCAT_AP\Attribute\URI;
 /**
  * A catalogue or repository that hosts the Datasets being described.
  */
-#[URI('dcat:Catalog')]
+#[URI('http://www.w3.org/ns/dcat#Catalog')]
 class Catalogue extends Resource
 {
     /** @var string[] */
@@ -19,7 +19,7 @@ class Catalogue extends Resource
      * This property links the Catalogue with a Dataset that is part of the Catalogue.
      * @var \PHP_DCAT_AP\DCAT\Dataset[]
      */
-    #[URI('dcat:dataset')]
+    #[URI('http://www.w3.org/ns/dcat#dataset')]
     public array $dataset = [];
 
     /**
