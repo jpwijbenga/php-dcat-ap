@@ -18,12 +18,19 @@ class RdfSerializer
         $this->graph = new Graph();
     }
 
-    public function addSubject(DCATClassInterface $subject): void
+    public function addSubject(DCATClassInterface $subject): DCATClassInterface
     {
         // Validate mandatory properties
         $subject->checkRequiredProperties();
 
-        $resource = $this->graph->resource($subject->getUri());
+        $uri = $subject->getUri();
+        
+        if (is_null($uri)) {
+            $uri = $this->graph->newBNode()->getUri();
+            $subject->setUri($uri);
+        }
+
+        $resource = $this->graph->resource($uri);
         
         $reflection = new ReflectionClass($subject);
         $attributes = $reflection->getAttributes(URI::class);
@@ -46,6 +53,8 @@ class RdfSerializer
                 $this->addProperty($resource, $subject, $property, $attribute);
             }
         }
+
+        return $subject;
     }
 
     /**

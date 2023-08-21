@@ -14,11 +14,21 @@ class Resource implements DCATClassInterface
 {
     protected static $REQUIRED_PROPERTIES = [];
 
-    protected string $uri;
+    protected ?string $uri;
 
-    public function getUri(): string
+    public function __construct(?string $uri = null)
+    {
+        $this->uri = $uri;
+    }
+
+    public function getUri(): ?string
     {
         return $this->uri;
+    }
+
+    public function setUri(string $uri): void
+    {
+        $this->uri = $uri;
     }
 
     public function checkRequiredProperties(): void

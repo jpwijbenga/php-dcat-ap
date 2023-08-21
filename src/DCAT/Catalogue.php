@@ -44,9 +44,4 @@ class Catalogue extends Resource
      */
     #[URI('http://purl.org/dc/terms/title')]
     public array $title = [];
-
-    public function __construct(string $uri)
-    {
-        $this->uri = $uri;
-    }
 }
