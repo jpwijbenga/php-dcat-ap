@@ -4,6 +4,7 @@ namespace PHP_DCAT_AP\Serializer;
 
 use EasyRdf\Graph;
 use PHP_DCAT_AP\Attribute\URI;
+use PHP_DCAT_AP\DCAT\Literal;
 use PHP_DCAT_AP\Interface\DCATClassInterface;
 use ReflectionAttribute;
 use ReflectionClass;
@@ -12,6 +13,8 @@ use ReflectionProperty;
 class RdfSerializer
 {
     public Graph $graph;
+
+    public string $defaultLang = 'en';
 
     public function __construct()
     {
@@ -76,13 +79,18 @@ class RdfSerializer
 
         $values = $subject->{$property->getName()};
 
-        if (is_array($values)) {
-            foreach ($values as $value) {
-                // TODO: now just adding a literal, but can be any type
+        $values = is_array($values) ? $values : [$values];
+
+        
+        foreach ($values as $value) {
+            if ($value instanceof DCATClassInterface) {
+                $this->addSubject($value);
+                $resource->addResource($propertyUri, $value->getUri());
+            } elseif ($value instanceof Literal) {
                 $resource->addLiteral($propertyUri, $value);
+            } else {
+                $resource->addLiteral($propertyUri, $value, $this->defaultLang);
             }
-        } else {
-            $resource->addLiteral($propertyUri, $values);
         }
     }
 }
