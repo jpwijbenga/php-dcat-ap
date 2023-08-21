@@ -2,7 +2,7 @@
 
 namespace PHP_DCAT_AP\Interface;
 
-interface HasUriInterface
+interface DCATClassInterface
 {
     public function getUri(): string;
 }

@@ -4,7 +4,7 @@ namespace PHP_DCAT_AP\Serializer;
 
 use EasyRdf\Graph;
 use PHP_DCAT_AP\Attribute\URI;
-use PHP_DCAT_AP\Interface\HasUriInterface;
+use PHP_DCAT_AP\Interface\DCATClassInterface;
 use ReflectionAttribute;
 use ReflectionClass;
 use ReflectionProperty;
@@ -18,7 +18,7 @@ class RdfSerializer
         $this->graph = new Graph();
     }
 
-    public function addSubject(HasUriInterface $subject): void
+    public function addSubject(DCATClassInterface $subject): void
     {
         $resource = $this->graph->resource($subject->getUri());
         
@@ -49,14 +49,14 @@ class RdfSerializer
      * Undocumented function
      *
      * @param \EasyRdf\Resource $resource
-     * @param HasUriInterface $subject
+     * @param DCATClassInterface $subject
      * @param ReflectionProperty $property
      * @param ReflectionAttribute<\PHP_DCAT_AP\Attribute\URI> $attribute
      * @return void
      */
     public function addProperty(
         \EasyRdf\Resource $resource,
-        HasUriInterface $subject,
+        DCATClassInterface $subject,
         ReflectionProperty $property,
         $attribute
     ): void {
