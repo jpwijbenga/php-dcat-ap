@@ -16,6 +16,7 @@ class RdfSerializer
 
     public string $defaultLang = 'en';
     public bool $checkRequiredProperties = true;
+    protected array $addedResources = [];
 
     public function __construct()
     {
@@ -24,6 +25,12 @@ class RdfSerializer
 
     public function addSubject(DCATClassInterface $subject): DCATClassInterface
     {
+        if (in_array($subject, $this->addedResources, true)) {
+            return $subject;
+        } else {
+            $this->addedResources[] = $subject;
+        }
+
         // Validate mandatory properties
         if ($this->checkRequiredProperties) {
             $subject->checkRequiredProperties();

@@ -44,4 +44,16 @@ class Catalogue extends Resource
      */
     #[URI('http://purl.org/dc/terms/title')]
     public array $title = [];
+
+
+    /**********************************************************************************************
+     * OPTIONAL PROPERTIES
+     *********************************************************************************************/
+
+    /**
+     * This property refers to a related Catalogue that is part of the described Catalogue.
+     * @var \PHP_DCAT_AP\DCAT\Catalogue[]
+     */
+    #[URI('http://purl.org/dc/terms/hasPart')]
+    public array $hasPart = [];
 }

@@ -16,6 +16,7 @@ $cat->title[] = new Literal('Smart Connected Supplier Network Vocabulary Hub ', 
 $cat->description = [new Literal('Test here', 'en'), new Literal('Hier NL', 'nl')];
 $cat->dataset[] = new Dataset();
 $cat->publisher = new Agent();
+$cat->hasPart[] = $cat; // check for recursion
 
 $serializer = new RdfSerializer();
 $serializer->checkRequiredProperties = false;
