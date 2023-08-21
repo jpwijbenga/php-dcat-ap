@@ -18,6 +18,7 @@ $cat->dataset[] = new Dataset();
 $cat->publisher = new Agent();
 
 $serializer = new RdfSerializer();
+$serializer->checkRequiredProperties = false;
 
 $serializer->addSubject($cat);
 

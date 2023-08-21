@@ -15,6 +15,7 @@ class RdfSerializer
     public Graph $graph;
 
     public string $defaultLang = 'en';
+    public bool $checkRequiredProperties = true;
 
     public function __construct()
     {
@@ -24,7 +25,9 @@ class RdfSerializer
     public function addSubject(DCATClassInterface $subject): DCATClassInterface
     {
         // Validate mandatory properties
-        $subject->checkRequiredProperties();
+        if ($this->checkRequiredProperties) {
+            $subject->checkRequiredProperties();
+        }
 
         $uri = $subject->getUri();
         
