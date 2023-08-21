@@ -11,4 +11,8 @@ use PHP_DCAT_AP\Attribute\URI;
 #[URI('foaf:Agent')]
 class Agent extends Resource
 {
+    /** @var string[] */
+    protected static $REQUIRED_PROPERTIES = [
+        'name'
+    ];
 }

@@ -10,4 +10,8 @@ use PHP_DCAT_AP\Attribute\URI;
 #[URI('http://www.w3.org/2004/02/skos/core#ConceptScheme')]
 class CategoryScheme extends Resource
 {
+    /** @var string[] */
+    protected static $REQUIRED_PROPERTIES = [
+        'title'
+    ];
 }

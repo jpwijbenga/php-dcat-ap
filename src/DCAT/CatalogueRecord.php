@@ -10,4 +10,8 @@ use PHP_DCAT_AP\Attribute\URI;
 #[URI('http://www.w3.org/ns/dcat#CatalogRecord')]
 class CatalogueRecord extends Resource
 {
+    /** @var string[] */
+    protected static $REQUIRED_PROPERTIES = [
+        'primaryTopic', 'modificationDate'
+    ];
 }

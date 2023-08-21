@@ -10,4 +10,8 @@ use PHP_DCAT_AP\Attribute\URI;
 #[URI('http://www.w3.org/ns/dcat#Dataset')]
 class Dataset extends Resource
 {
+    /** @var string[] */
+    protected static $REQUIRED_PROPERTIES = [
+        'description', 'title'
+    ];
 }

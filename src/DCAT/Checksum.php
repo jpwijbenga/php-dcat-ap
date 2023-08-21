@@ -12,4 +12,8 @@ use PHP_DCAT_AP\Attribute\URI;
 #[URI('http://spdx.org/rdf/terms#Checksum')]
 class Checksum extends Resource
 {
+    /** @var string[] */
+    protected static $REQUIRED_PROPERTIES = [
+        'algorithm', 'checksumValue'
+    ];
 }

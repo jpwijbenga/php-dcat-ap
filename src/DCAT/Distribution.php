@@ -10,4 +10,8 @@ use PHP_DCAT_AP\Attribute\URI;
 #[URI('http://www.w3.org/ns/dcat#Distribution')]
 class Distribution extends Resource
 {
+    /** @var string[] */
+    protected static $REQUIRED_PROPERTIES = [
+        'accessURL'
+    ];
 }
