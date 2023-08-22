@@ -71,8 +71,6 @@ class RdfSerializer
     }
 
     /**
-     * Undocumented function
-     *
      * @param \EasyRdf\Resource $resource
      * @param DCATClassInterface $subject
      * @param ReflectionProperty $property
@@ -91,7 +89,6 @@ class RdfSerializer
 
         $values = is_array($values) ? $values : [$values];
 
-        
         foreach ($values as $value) {
             if ($value instanceof DCATClassInterface) {
                 $this->addSubject($value);
