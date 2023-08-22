@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:spdx="http://spdx.org/rdf/terms#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:locn="http://www.w3.org/ns/locn#"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:schema="http://schema.org/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:vlgen="https://data.vlaanderen.be/ns/generiek"
+         xmlns:mdcat="https://data.vlaanderen.be/ns/metadata-dcat#"
+         xmlns:adres="https://data.vlaanderen.be/ns/adres#"
+         xmlns:geodcat="http://data.europa.eu/930/">
+   <dcat:Catalog rdf:about="https://metadata.vlaanderen.be/srv/resources/catalogs/319403b7-0397-4b9d-884b-80693ebac521">
+      <dct:title xml:lang="nl">Metadata Vlaanderen</dct:title>
+      <dct:description xml:lang="nl">Metadata Vlaanderen (agentschap Digitaal Vlaanderen)</dct:description>
+      <dct:identifier>319403b7-0397-4b9d-884b-80693ebac521</dct:identifier>
+      <dct:publisher>
+         <foaf:Agent rdf:about="https://metadata.vlaanderen.be/srv/resources/organizations/agentschap%20Digitaal%20Vlaanderen">
+            <foaf:name xml:lang="nl">agentschap Digitaal Vlaanderen</foaf:name>
+            <dct:type>
+               <skos:Concept rdf:about="http://purl.org/adms/publishertype/LocalAuthority">
+                  <skos:prefLabel xml:lang="nl">Lokaal bestuur</skos:prefLabel>
+                  <skos:prefLabel xml:lang="en">Local Authority</skos:prefLabel>
+                  <skos:prefLabel xml:lang="fr">Local Authority</skos:prefLabel>
+                  <skos:prefLabel xml:lang="de">Local Authority</skos:prefLabel>
+                  <skos:inScheme rdf:resource="http://purl.org/adms/publishertype/1.0"/>
+               </skos:Concept>
+            </dct:type>
+         </foaf:Agent>
+      </dct:publisher>
+      <foaf:homepage>
+         <foaf:Document rdf:about="https://metadata.vlaanderen.be">
+            <foaf:name xml:lang="nl">Metadata Vlaanderen</foaf:name>
+         </foaf:Document>
+      </foaf:homepage>
+      <dct:license>
+         <dct:LicenseDocument rdf:about="https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0">
+            <dct:type>
+               <skos:Concept rdf:about="http://purl.org/adms/licencetype/PublicDomain">
+                  <skos:prefLabel xml:lang="nl">Werk in het publiek domein</skos:prefLabel>
+                  <skos:prefLabel xml:lang="en">Public domain</skos:prefLabel>
+                  <skos:prefLabel xml:lang="fr">Public domain</skos:prefLabel>
+                  <skos:prefLabel xml:lang="de">Public domain</skos:prefLabel>
+                  <skos:inScheme rdf:resource="http://purl.org/adms/licencetype/1.0"/>
+               </skos:Concept>
+            </dct:type>
+            <dct:title xml:lang="nl">Creative Commons Zero verklaring</dct:title>
+            <dct:description xml:lang="nl">De instantie doet afstand van haar intellectuele eigendomsrechten voor zover dit wettelijk mogelijk is. Hierdoor kan de gebruiker de data hergebruiken voor eender welk doel, zonder een verplichting op naamsvermelding. Deze is de welbekende CC0 licentie.</dct:description>
+            <dct:identifier>https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0</dct:identifier>
+         </dct:LicenseDocument>
+      </dct:license>
+      <dct:language>
+         <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/language/NLD">
+            <rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+            <skos:prefLabel xml:lang="nl">Nederlands</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Dutch</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">néerlandais</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Niederländisch</skos:prefLabel>
+            <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/language"/>
+         </skos:Concept>
+      </dct:language>
+      <dcat:contactPoint>
+         <vcard:Organization>
+            <vcard:organization-name>agentschap Digitaal Vlaanderen</vcard:organization-name>
+            <vcard:hasEmail rdf:resource="mailto:digitaal.vlaanderen@vlaanderen.be"/>
+            <vcard:hasURL rdf:resource="https://www.vlaanderen.be/digitaal-vlaanderen"/>
+         </vcard:Organization>
+      </dcat:contactPoint>
+      <dcat:record rdf:resource="https://metadata.vlaanderen.be/srv/api/records/cd3ae7f9-9c8e-3390-9115-6e5320e15215"/>
+      <dcat:dataset rdf:resource="https://opendata.vlaanderen.be/dataset/c4674871-9db4-4159-a3b2-e77f203876bd"/>
+   </dcat:Catalog>
+   <dcat:CatalogRecord rdf:about="https://metadata.vlaanderen.be/srv/api/records/cd3ae7f9-9c8e-3390-9115-6e5320e15215">
+      <adms:identifier>
+         <adms:Identifier>
+            <skos:notation>https://metadata.vlaanderen.be/srv/api/records/cd3ae7f9-9c8e-3390-9115-6e5320e15215</skos:notation>
+         </adms:Identifier>
+      </adms:identifier>
+      <dct:identifier>cd3ae7f9-9c8e-3390-9115-6e5320e15215</dct:identifier>
+      <foaf:primaryTopic rdf:resource="https://opendata.vlaanderen.be/dataset/c4674871-9db4-4159-a3b2-e77f203876bd"/>
+      <dct:modified>2022-06-21</dct:modified>
+      <dct:conformsTo>
+          <dct:Standard rdf:about="https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/erkendestandaard/2019-10-03">
+            <dct:title>Dcat-ap-vl</dct:title>
+            <dct:description>Dit applicatieprofiel beschrijft Open Data Catalogi in Vlaanderen. DCAT-AP Vlaanderen (DCAT-AP VL) is een verdere specialisatie van DCAT-AP. De applicatie waarop dit profiel betrekking heeft is een Open Data Portaal in Vlaanderen. Open Data portalen zijn catalogussen van Open Data datasets. Ze hebben als belangrijkste doelstelling het vindbaar maken van data en hierdoor het hergebruik ervan te stimuleren. Open Data portalen vervullen een centrale rol in de overheidsopdracht om de toegankelijkheid tot overheidsinformatie te realiseren. Met dit applicatieprofiel bevorderen we de uniformiteit van de beschikbare informatie over datasets. Tevens vereenvoudigen we het aggregatie proces van meerdere Open Data Catalogi. Dit document bevat de verplichte elementen en bijkomende elementen waarover DCAT-AP Vlaanderen een uitspraak doet. Aanbevolen en optionele informatie waarvoor geen bijkomende afspraken in de context van DCAT-AP Vlaanderen zijn, zijn niet opgenomen in dit document. Hiervoor verwijzen we naar de DCAT-AP specificatie zelf.</dct:description>
+            <owl:versionInfo>2.0</owl:versionInfo>
+          </dct:Standard>
+        </dct:conformsTo>
+   </dcat:CatalogRecord>
+   <dcat:Dataset rdf:about="https://opendata.vlaanderen.be/dataset/c4674871-9db4-4159-a3b2-e77f203876bd">
+      <adms:identifier>
+         <adms:Identifier>
+            <skos:notation>https://opendata.vlaanderen.be/dataset/c4674871-9db4-4159-a3b2-e77f203876bd</skos:notation>
+         </adms:Identifier>
+      </adms:identifier>
+      <dct:identifier>c4674871-9db4-4159-a3b2-e77f203876bd</dct:identifier>
+      <dct:identifier>statische-vergelijking-van-productiekosten-en-schadekosten-van-de-elektriciteitstechnologi-201011</dct:identifier>
+      <dct:title xml:lang="nl">Milieuschadekosten van verschillende technologieën voor woningverwarming</dct:title>
+      <dct:description xml:lang="nl">Je woning verwarmen met hout is veel schadelijker voor het milieu dan alle andere verwarmingstypes. Open haarden spannen daarbij de kroon, maar ook recente houttoestellen zijn een stuk schadelijker dan bv. moderne gasinstallaties. Hout als verwarmingsbrandstof is verantwoordelijk voor 60 % van alle directe milieuschadekosten, hoewel maar 20 % van de Vlaamse gezinnen hout gebruikt. Warmtepompen en -netten hebben de laagste schadekosten. De VMM liet deze studie uitvoeren als bijdrage aan de Green Deal Huishoudelijke Houtverwarming.</dct:description>
+      <dcat:contactPoint>
+          <vcard:Organization rdf:about="http://www.vmm.be/">
+            <vcard:fn>Vlaamse Milieumaatschappij</vcard:fn>
+            <vcard:hasEmail rdf:resource="mailto:info@vmm.be"/>
+            <vcard:hasURL rdf:resource="www.vmm.be"/>
+            <vcard:hasTelephone>053 72 62 10</vcard:hasTelephone>
+          </vcard:Organization>
+        </dcat:contactPoint>
+      <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-24T14:33:54</dct:issued>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-21T14:33:54</dct:modified>
+      <dct:publisher>
+          <foaf:Agent rdf:about="http://data.vlaanderen.be/id/organisatie/OVO000092">
+            <foaf:name xml:lang="nl">Vlaamse Milieumaatschappij</foaf:name>
+          </foaf:Agent>
+        </dct:publisher>
+      <dcat:keyword xml:lang="nl">milieuschadekosten</dcat:keyword>
+      <dcat:keyword xml:lang="nl">technologieën</dcat:keyword>
+      <dcat:keyword xml:lang="nl">woningverwarming</dcat:keyword>
+      <dcat:keyword xml:lang="nl">kosten</dcat:keyword>
+      <mdcat:statuut>
+          <skos:Concept rdf:about="https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/VLOPENDATA">
+            <skos:prefLabel xml:lang="nl">Vlaamse Open data</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Vlaamse Open data</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr"/>
+            <skos:prefLabel xml:lang="de"/>
+            <skos:inScheme rdf:resource="https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden"/>
+          </skos:Concept>
+        </mdcat:statuut>
+      <dcat:theme>
+          <skos:Concept rdf:about="http://vocab.belgif.be/auth/datatheme/ENER">
+            <skos:prefLabel xml:lang="nl">Energie</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Energy</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Énergie</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Energie</skos:prefLabel>
+            <skos:inScheme rdf:resource="http://vocab.belgif.be/auth/datatheme"/>
+          </skos:Concept>
+        </dcat:theme>
+      <dcat:theme>
+          <skos:Concept rdf:about="http://vocab.belgif.be/auth/datatheme/ECON">
+            <skos:prefLabel xml:lang="nl">Economie en financiën</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Economy and finance</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Économie et finances</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Wirtschaft und Finanzen</skos:prefLabel>
+            <skos:inScheme rdf:resource="http://vocab.belgif.be/auth/datatheme"/>
+          </skos:Concept>
+        </dcat:theme>
+      <dcat:theme>
+          <skos:Concept rdf:about="http://vocab.belgif.be/auth/datatheme/SOCI">
+            <skos:prefLabel xml:lang="nl">Bevolking en samenleving</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Population and society</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Population et société</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Bevölkerung und Gesellschaft</skos:prefLabel>
+            <skos:inScheme rdf:resource="http://vocab.belgif.be/auth/datatheme"/>
+          </skos:Concept>
+        </dcat:theme>
+      <dcat:theme>
+          <skos:Concept rdf:about="http://vocab.belgif.be/auth/datatheme/ENVI">
+            <skos:prefLabel xml:lang="nl">Milieu</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Environment</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">Environnement</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Umwelt</skos:prefLabel>
+            <skos:inScheme rdf:resource="http://vocab.belgif.be/auth/datatheme"/>
+          </skos:Concept>
+        </dcat:theme>
+      <dct:accessRights>
+          <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/access-right/PUBLIC">
+            <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+            <skos:prefLabel xml:lang="nl">publiek</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">public</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">public</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">public</skos:prefLabel>
+            <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/access-right"/>
+          </skos:Concept>
+        </dct:accessRights>
+      <dct:language>
+          <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/language/NLD">
+            <rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+            <skos:prefLabel xml:lang="nl">Nederlands</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Dutch</skos:prefLabel>
+            <skos:prefLabel xml:lang="fr">néerlandais</skos:prefLabel>
+            <skos:prefLabel xml:lang="de">Niederländisch</skos:prefLabel>
+            <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/language"/>
+          </skos:Concept>
+        </dct:language>
+      <dcat:distribution>
+          <dcat:Distribution rdf:about="https://metadata.vlaanderen.be/srv/resources/distributions/c4674871-9db4-4159-a3b2-e77f203876bd">
+            <dct:identifier>f9208d77-7a3f-45af-b2cf-41913c6ec2f5</dct:identifier>
+            <dct:title xml:lang="nl">Directe milieuschadekosten naar emissiestof voor woningverwarming in Vlaanderen (2015)</dct:title>
+            <dct:description xml:lang="nl">Deze grafiek geeft het aandeel van de verschillende emissiestoffen voor woningverwarming in Vlaanderen (2015)</dct:description>
+            <dcat:accessURL rdf:resource="https://www.vmm.be/nieuwsbrief/afbeeldingen/milieuschadekosten-emissiestof/@@download/csv"/>
+            <dct:format>
+              <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/file-type/CSV">
+                  <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
+                  <skos:prefLabel xml:lang="nl">CSV</skos:prefLabel>
+                  <skos:prefLabel xml:lang="en">CSV</skos:prefLabel>
+                  <skos:prefLabel xml:lang="fr">CSV</skos:prefLabel>
+                  <skos:prefLabel xml:lang="de">CSV</skos:prefLabel>
+                  <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/file-type"/>
+              </skos:Concept>
+            </dct:format>
+            <dct:license>
+              <dct:LicenseDocument rdf:about="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0">
+                  <dct:title xml:lang="nl">Modellicentie voor gratis hergebruik</dct:title>
+                  <dct:description xml:lang="nl">Onder deze licentie doet de instantie geen afstand van haar intellectuele rechten, maar mag de data voor eender welk doel hergebruikt worden, gratis en onder minimale restricties.</dct:description>
+                  <dct:identifier>https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0</dct:identifier>
+              </dct:LicenseDocument>
+            </dct:license>
+          </dcat:Distribution>
+        </dcat:distribution>
+      <dcat:distribution>
+          <dcat:Distribution rdf:about="https://metadata.vlaanderen.be/srv/resources/distributions/c4674871-9db4-4159-a3b2-e77f203876bd">
+            <dct:identifier>e0283c1c-3a48-4197-8ad9-fd74fbab26b6</dct:identifier>
+            <dct:title xml:lang="nl">Totale schadekosten van de recentste technieken (2017) in €/GJ geleverde warmte</dct:title>
+            <dct:description xml:lang="nl">Deze grafiek geeft een overzicht van de totale schadekosten van de recentste verwarmingstechnieken technieken</dct:description>
+            <dcat:accessURL rdf:resource="https://www.vmm.be/nieuwsbrief/afbeeldingen/schadekosten-recente-technieken/@@download/csv"/>
+            <dct:format>
+              <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/file-type/CSV">
+                  <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
+                  <skos:prefLabel xml:lang="nl">CSV</skos:prefLabel>
+                  <skos:prefLabel xml:lang="en">CSV</skos:prefLabel>
+                  <skos:prefLabel xml:lang="fr">CSV</skos:prefLabel>
+                  <skos:prefLabel xml:lang="de">CSV</skos:prefLabel>
+                  <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/file-type"/>
+              </skos:Concept>
+            </dct:format>
+            <dct:license>
+              <dct:LicenseDocument rdf:about="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0">
+                  <dct:type>
+                     <skos:Concept rdf:about="http://purl.org/adms/licencetype/Attribution">
+                        <skos:prefLabel xml:lang="nl">Verplichte bronvermelding</skos:prefLabel>
+                        <skos:prefLabel xml:lang="en">Attribution</skos:prefLabel>
+                        <skos:prefLabel xml:lang="fr">Attribution</skos:prefLabel>
+                        <skos:prefLabel xml:lang="de">Attribution</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/adms/licencetype/1.0"/>
+                     </skos:Concept>
+                  </dct:type>
+                  <dct:title xml:lang="nl">Modellicentie voor gratis hergebruik</dct:title>
+                  <dct:description xml:lang="nl">Onder deze licentie doet de instantie geen afstand van haar intellectuele rechten, maar mag de data voor eender welk doel hergebruikt worden, gratis en onder minimale restricties.</dct:description>
+                  <dct:identifier>https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0</dct:identifier>
+              </dct:LicenseDocument>
+            </dct:license>
+          </dcat:Distribution>
+        </dcat:distribution>
+      <dcat:distribution>
+          <dcat:Distribution rdf:about="https://metadata.vlaanderen.be/srv/resources/distributions/c4674871-9db4-4159-a3b2-e77f203876bd">
+            <dct:identifier>02a32ec5-e7c3-4ff3-aa9a-30b5e73ea475</dct:identifier>
+            <dct:title xml:lang="nl">Directe milieuschadekosten naar energiedrager voor woningverwarming in Vlaanderen (2015)</dct:title>
+            <dct:description xml:lang="nl">Deze grafiek geeft het aandeel van de verschillende energiedragers voor woningverwarming in Vlaanderen (2015)</dct:description>
+            <dcat:accessURL rdf:resource="https://www.vmm.be/nieuwsbrief/afbeeldingen/milieuschadekosten-energiedrager/@@download/csv"/>
+            <dct:format>
+              <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/file-type/CSV">
+                  <rdf:type rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
+                  <skos:prefLabel xml:lang="nl">CSV</skos:prefLabel>
+                  <skos:prefLabel xml:lang="en">CSV</skos:prefLabel>
+                  <skos:prefLabel xml:lang="fr">CSV</skos:prefLabel>
+                  <skos:prefLabel xml:lang="de">CSV</skos:prefLabel>
+                  <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/file-type"/>
+              </skos:Concept>
+            </dct:format>
+            <dct:license>
+              <dct:LicenseDocument rdf:about="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0">
+                  <dct:type>
+                     <skos:Concept rdf:about="http://purl.org/adms/licencetype/Attribution">
+                        <skos:prefLabel xml:lang="nl">Verplichte bronvermelding</skos:prefLabel>
+                        <skos:prefLabel xml:lang="en">Attribution</skos:prefLabel>
+                        <skos:prefLabel xml:lang="fr">Attribution</skos:prefLabel>
+                        <skos:prefLabel xml:lang="de">Attribution</skos:prefLabel>
+                        <skos:inScheme rdf:resource="http://purl.org/adms/licencetype/1.0"/>
+                     </skos:Concept>
+                  </dct:type>
+                  <dct:title xml:lang="nl">Modellicentie voor gratis hergebruik</dct:title>
+                  <dct:description xml:lang="nl">Onder deze licentie doet de instantie geen afstand van haar intellectuele rechten, maar mag de data voor eender welk doel hergebruikt worden, gratis en onder minimale restricties.</dct:description>
+                  <dct:identifier>https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0</dct:identifier>
+              </dct:LicenseDocument>
+            </dct:license>
+          </dcat:Distribution>
+        </dcat:distribution>
+   </dcat:Dataset>
+</rdf:RDF>
