@@ -23,7 +23,7 @@ class DataService extends Resource
      * @var \PHP_DCAT_AP\DCAT\Resource[]
      */
     #[URI('http://www.w3.org/ns/dcat#endpointURL')]
-    public array $endpointURL = [];
+    public array $endpointURL;
 
     /**
      * This property contains a name given to the Data Service.
@@ -31,7 +31,7 @@ class DataService extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://purl.org/dc/terms/title')]
-    public array $title = [];
+    public array $title;
 
      /**********************************************************************************************
      * RECOMMENDED PROPERTIES
@@ -44,14 +44,14 @@ class DataService extends Resource
      * @var \PHP_DCAT_AP\DCAT\Resource[]
      */
     #[URI('http://www.w3.org/ns/dcat#endpointDescription')]
-    public array $endpointDescription = [];
+    public array $endpointDescription;
 
     /**
      * This property refers to a collection of data that this data service can distribute.
      * @var \PHP_DCAT_AP\DCAT\Dataset[]
      */
     #[URI('http://www.w3.org/ns/dcat#servesDataset')]
-    public array $servesDataset = [];
+    public array $servesDataset;
 
     /**********************************************************************************************
      * OPTIONAL PROPERTIES
@@ -70,7 +70,7 @@ class DataService extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://purl.org/dc/terms/description')]
-    public array $description = [];
+    public array $description;
 
     /**
      * This property contains  the licence under which the Data service is made available.

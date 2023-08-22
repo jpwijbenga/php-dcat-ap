@@ -24,7 +24,7 @@ class Category extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://www.w3.org/2004/02/skos/core#prefLabel')]
-    public array $preferredLabel = [];
+    public array $preferredLabel;
 
      /**********************************************************************************************
      * NO RECOMMENDED PROPERTIES

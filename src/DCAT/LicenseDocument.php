@@ -22,7 +22,7 @@ class LicenseDocument extends Resource
      * @var \PHP_DCAT_AP\DCAT\Category[]
      */
     #[URI('http://purl.org/dc/terms/type')]
-    public array $licenceType = [];
+    public array $licenceType;
 
     /**********************************************************************************************
      * NO OPTIONAL PROPERTIES

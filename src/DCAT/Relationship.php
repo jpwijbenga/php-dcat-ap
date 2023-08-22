@@ -23,14 +23,14 @@ class Relationship extends Resource
      * @var \PHP_DCAT_AP\DCAT\Role[]
      */
     #[URI('http://www.w3.org/ns/dcat#hadRole')]
-    public array $hadRole = [];
+    public array $hadRole;
 
     /**
      * This property refers to the resource related to the source resource.
      * @var \PHP_DCAT_AP\DCAT\Resource[]
      */
     #[URI('http://purl.org/dc/terms/relation')]
-    public array $relation = [];
+    public array $relation;
 
      /**********************************************************************************************
      * NO RECOMMENDED PROPERTIES

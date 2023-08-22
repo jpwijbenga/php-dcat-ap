@@ -24,7 +24,7 @@ class CategoryScheme extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://purl.org/dc/terms/title')]
-    public array $title = [];
+    public array $title;
 
      /**********************************************************************************************
      * NO RECOMMENDED PROPERTIES

@@ -25,7 +25,7 @@ class Agent extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://xmlns.com/foaf/0.1/name')]
-    public array $name = [];
+    public array $name;
 
      /**********************************************************************************************
      * RECOMMENDED PROPERTIES

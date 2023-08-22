@@ -66,7 +66,7 @@ class CatalogueRecord extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://purl.org/dc/terms/description')]
-    public array $description = [];
+    public array $description;
 
     /**
      * This property refers to a language used in the textual metadata describing titles,
@@ -75,7 +75,7 @@ class CatalogueRecord extends Resource
      * @var \PHP_DCAT_AP\DCAT\LinguisticSystem[]
      */
     #[URI('http://purl.org/dc/terms/language')]
-    public array $language = [];
+    public array $language;
 
     /**
      * This property refers to the original metadata that was used in creating metadata for the Dataset.
@@ -90,5 +90,5 @@ class CatalogueRecord extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://purl.org/dc/terms/title')]
-    public array $title = [];
+    public array $title;
 }

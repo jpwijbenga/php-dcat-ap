@@ -24,7 +24,7 @@ class Distribution extends Resource
      * @var \PHP_DCAT_AP\DCAT\Resource[]
      */
     #[URI('http://www.w3.org/ns/dcat#accessURL')]
-    public array $accessURL = [];
+    public array $accessURL;
 
      /**********************************************************************************************
      * RECOMMENDED PROPERTIES
@@ -42,7 +42,7 @@ class Distribution extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://purl.org/dc/terms/description')]
-    public array $description = [];
+    public array $description;
 
     /**
      * This property refers to the file format of the Distribution.

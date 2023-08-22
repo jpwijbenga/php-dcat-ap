@@ -24,7 +24,7 @@ class Dataset extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://purl.org/dc/terms/description')]
-    public array $description = [];
+    public array $description;
 
     /**
      * This property contains a name given to the Dataset.
@@ -32,7 +32,7 @@ class Dataset extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://purl.org/dc/terms/title')]
-    public array $title = [];
+    public array $title;
 
      /**********************************************************************************************
      * RECOMMENDED PROPERTIES
@@ -42,21 +42,21 @@ class Dataset extends Resource
      * @var \PHP_DCAT_AP\DCAT\Kind[]
      */
     #[URI('http://www.w3.org/ns/dcat#contactPoint')]
-    public array $contactPoint = [];
+    public array $contactPoint;
 
     /**
      * This property links the Dataset to an available Distribution.
      * @var \PHP_DCAT_AP\DCAT\Distribution[]
      */
     #[URI('http://www.w3.org/ns/dcat#distribution')]
-    public array $datasetDistribution = [];
+    public array $datasetDistribution;
 
     /**
      * This property contains a keyword or tag describing the Dataset.
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://www.w3.org/ns/dcat#keyword')]
-    public array $keyword = [];
+    public array $keyword;
 
     /**
      * This property refers to an entity (organisation) responsible for making the Dataset available.
@@ -70,14 +70,14 @@ class Dataset extends Resource
      * @var \PHP_DCAT_AP\DCAT\Location[]
      */
     #[URI('http://purl.org/dc/terms/spatial')]
-    public array $spatialCoverage = [];
+    public array $spatialCoverage;
 
     /**
      * This property refers to a temporal period that the Dataset covers.
      * @var \PHP_DCAT_AP\DCAT\PeriodOfTime[]
      */
     #[URI('http://purl.org/dc/terms/temporal')]
-    public array $temporalCoverage = [];
+    public array $temporalCoverage;
 
     /**
      * This property refers to a category of the Dataset.
@@ -85,7 +85,7 @@ class Dataset extends Resource
      * @var \PHP_DCAT_AP\DCAT\Category[]
      */
     #[URI('http://www.w3.org/ns/dcat#theme')]
-    public array $theme = [];
+    public array $theme;
 
     /**********************************************************************************************
      * OPTIONAL PROPERTIES

@@ -24,7 +24,7 @@ class Catalogue extends Resource
      * @var \PHP_DCAT_AP\DCAT\Dataset[]
      */
     #[URI('http://www.w3.org/ns/dcat#dataset')]
-    public array $dataset = [];
+    public array $dataset;
 
     /**
      * This property contains a free-text account of the Catalogue.
@@ -32,7 +32,7 @@ class Catalogue extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://purl.org/dc/terms/description')]
-    public array $description = [];
+    public array $description;
 
     /**
      * This property refers to an entity (organisation) responsible for making the Catalogue available.
@@ -47,7 +47,7 @@ class Catalogue extends Resource
      * @var \PHP_DCAT_AP\DCAT\Literal[]
      */
     #[URI('http://purl.org/dc/terms/title')]
-    public array $title = [];
+    public array $title;
 
     /**********************************************************************************************
      * RECOMMENDED PROPERTIES
@@ -67,7 +67,7 @@ class Catalogue extends Resource
      * @var \PHP_DCAT_AP\DCAT\LinguisticSystem[]
      */
     #[URI('http://purl.org/dc/terms/language')]
-    public array $language = [];
+    public array $language;
 
     /**
      * This property refers to the licence under which the Catalogue can be used or reused.
@@ -88,14 +88,14 @@ class Catalogue extends Resource
      * @var \PHP_DCAT_AP\DCAT\Location[]
      */
     #[URI('http://purl.org/dc/terms/spatial')]
-    public array $spatial = [];
+    public array $spatial;
 
     /**
      * This property refers to a knowledge organization system used to classify the Catalogue's Datasets.
      * @var \PHP_DCAT_AP\DCAT\CategoryScheme[]
      */
     #[URI('http://www.w3.org/ns/dcat#themeTaxonomy')]
-    public array $themes = [];
+    public array $themes;
 
     /**
      * This property contains the most recent date on which the Catalogue was modified.
@@ -113,7 +113,7 @@ class Catalogue extends Resource
      * @var \PHP_DCAT_AP\DCAT\Catalogue[]
      */
     #[URI('http://purl.org/dc/terms/hasPart')]
-    public array $hasPart = [];
+    public array $hasPart;
 
     /**
      * This property refers to a related Catalogue in which the described Catalogue is physically or logically included.
@@ -127,7 +127,7 @@ class Catalogue extends Resource
      * @var \PHP_DCAT_AP\DCAT\CatalogueRecord[]
      */
     #[URI('http://www.w3.org/ns/dcat#record')]
-    public array $record = [];
+    public array $record;
 
     /**
      * This property refers to a statement that specifies rights associated with the Catalogue.
@@ -141,14 +141,14 @@ class Catalogue extends Resource
      * @var \PHP_DCAT_AP\DCAT\DataService[]
      */
     #[URI('http://www.w3.org/ns/dcat#service')]
-    public array $service = [];
+    public array $service;
 
     /**
      * This property refers to a catalog whose contents are of interest in the context of this catalog.
      * @var \PHP_DCAT_AP\DCAT\Catalogue[]
      */
     #[URI('http://www.w3.org/ns/dcat#catalog')]
-    public array $catalogue = [];
+    public array $catalogue;
 
     /**
      * This property refers to the  entity primarily responsible for producing the catalogue.
