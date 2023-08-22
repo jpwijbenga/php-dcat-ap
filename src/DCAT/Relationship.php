@@ -18,12 +18,25 @@ class Relationship extends Resource
     /**********************************************************************************************
      * MANDATORY PROPERTIES
      *********************************************************************************************/
+    /**
+     * This property refers to the function of an entity or agent with respect to another entity or resource.
+     * @var \PHP_DCAT_AP\DCAT\Role[]
+     */
+    #[URI('http://www.w3.org/ns/dcat#hadRole')]
+    public array $hadRole = [];
+
+    /**
+     * This property refers to the resource related to the source resource.
+     * @var \PHP_DCAT_AP\DCAT\Resource[]
+     */
+    #[URI('http://purl.org/dc/terms/relation')]
+    public array $relation = [];
 
      /**********************************************************************************************
-     * RECOMMENDED PROPERTIES
+     * NO RECOMMENDED PROPERTIES
      *********************************************************************************************/
 
     /**********************************************************************************************
-     * OPTIONAL PROPERTIES
+     * NO OPTIONAL PROPERTIES
      *********************************************************************************************/
 }

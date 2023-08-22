@@ -20,12 +20,27 @@ class Checksum extends Resource
     /**********************************************************************************************
      * MANDATORY PROPERTIES
      *********************************************************************************************/
+    /**
+     * This property identifies the algorithm used to produce the subject Checksum.
+     * Currently, SHA-1 is the only supported algorithm.
+     * It is anticipated that other algorithms will be supported at a later time.
+     * @var \PHP_DCAT_AP\DCAT\Resource
+     */
+    #[URI('http://spdx.org/rdf/terms#algorithm')]
+    public Resource $algorithm;
+    
+    /**
+     * This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm.
+     * @var \PHP_DCAT_AP\DCAT\Literal
+     */
+    #[URI('http://spdx.org/rdf/terms#checksumValue')]
+    public Literal $checksumValue;
 
      /**********************************************************************************************
-     * RECOMMENDED PROPERTIES
+     * NO RECOMMENDED PROPERTIES
      *********************************************************************************************/
 
     /**********************************************************************************************
-     * OPTIONAL PROPERTIES
+     * NO OPTIONAL PROPERTIES
      *********************************************************************************************/
 }

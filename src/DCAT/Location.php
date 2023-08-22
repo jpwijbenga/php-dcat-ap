@@ -14,14 +14,39 @@ use PHP_DCAT_AP\Attribute\URI;
 class Location extends Resource
 {
     /**********************************************************************************************
-     * MANDATORY PROPERTIES
+     * NO MANDATORY PROPERTIES
      *********************************************************************************************/
 
      /**********************************************************************************************
      * RECOMMENDED PROPERTIES
      *********************************************************************************************/
+    /**
+     * This property refers to he geographic bounding box of a resource.
+     *
+     * Please note that the order of usage is as follows: use the most specific geospatial relationship
+     * by preference. E.g. if the spatial description is a bbox, use dcat :bbox, otherwise use locn:geometry.
+     * @var \PHP_DCAT_AP\DCAT\Literal
+     */
+    #[URI('http://www.w3.org/ns/dcat#bbox')]
+    public Literal $boundingBox;
+
+    /**
+     * This property refers to the geographic center (centroid) of a resource.
+     * @var \PHP_DCAT_AP\DCAT\Literal
+     */
+    #[URI('http://www.w3.org/ns/dcat#centroid')]
+    public Literal $centroid;
 
     /**********************************************************************************************
      * OPTIONAL PROPERTIES
      *********************************************************************************************/
+     /**
+     * This property associates any resource with the corresponding geometry
+     *
+     * Please note that the order of usage is as follows: use the most specific geospatial relationship
+     * by preference. E.g. if the spatial description is a bbox, use dcat :bbox, otherwise use locn:geometry.
+     * @var \PHP_DCAT_AP\DCAT\Literal
+     */
+    #[URI('http://www.w3.org/ns/locn##geometry')]
+    public Literal $geometry;
 }

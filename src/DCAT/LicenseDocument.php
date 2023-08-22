@@ -11,14 +11,20 @@ use PHP_DCAT_AP\Attribute\URI;
 class LicenseDocument extends Resource
 {
     /**********************************************************************************************
-     * MANDATORY PROPERTIES
+     * NO MANDATORY PROPERTIES
      *********************************************************************************************/
 
      /**********************************************************************************************
      * RECOMMENDED PROPERTIES
      *********************************************************************************************/
+    /**
+     * This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’.
+     * @var \PHP_DCAT_AP\DCAT\Category[]
+     */
+    #[URI('http://purl.org/dc/terms/type')]
+    public array $licenceType = [];
 
     /**********************************************************************************************
-     * OPTIONAL PROPERTIES
+     * NO OPTIONAL PROPERTIES
      *********************************************************************************************/
 }

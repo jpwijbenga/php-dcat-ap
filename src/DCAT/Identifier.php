@@ -22,12 +22,19 @@ class Identifier extends Resource
     /**********************************************************************************************
      * MANDATORY PROPERTIES
      *********************************************************************************************/
+    /**
+     * This property contains a string that is an identifier in the context of the identifier
+     * scheme referenced by its datatype.
+     * @var \PHP_DCAT_AP\DCAT\Literal
+     */
+    #[URI('http://www.w3.org/2004/02/skos/core#notation')]
+    public Literal $notation;
 
      /**********************************************************************************************
-     * RECOMMENDED PROPERTIES
+     * NO RECOMMENDED PROPERTIES
      *********************************************************************************************/
 
     /**********************************************************************************************
-     * OPTIONAL PROPERTIES
+     * NO OPTIONAL PROPERTIES
      *********************************************************************************************/
 }

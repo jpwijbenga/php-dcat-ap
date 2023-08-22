@@ -18,12 +18,19 @@ class Category extends Resource
     /**********************************************************************************************
      * MANDATORY PROPERTIES
      *********************************************************************************************/
+    /**
+     * This property contains a preferred label of the category.
+     * This property can be repeated for parallel language versions of the label.
+     * @var \PHP_DCAT_AP\DCAT\Literal[]
+     */
+    #[URI('http://www.w3.org/2004/02/skos/core#prefLabel')]
+    public array $preferredLabel = [];
 
      /**********************************************************************************************
-     * RECOMMENDED PROPERTIES
+     * NO RECOMMENDED PROPERTIES
      *********************************************************************************************/
 
     /**********************************************************************************************
-     * OPTIONAL PROPERTIES
+     * NO OPTIONAL PROPERTIES
      *********************************************************************************************/
 }

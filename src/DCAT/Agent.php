@@ -19,12 +19,25 @@ class Agent extends Resource
     /**********************************************************************************************
      * MANDATORY PROPERTIES
      *********************************************************************************************/
+    /**
+     * This property contains a name of the agent.
+     * This property can be repeated for different versions of the name (e.g. the name in different languages)
+     * @var \PHP_DCAT_AP\DCAT\Literal[]
+     */
+    #[URI('http://xmlns.com/foaf/0.1/name')]
+    public array $name = [];
 
      /**********************************************************************************************
      * RECOMMENDED PROPERTIES
      *********************************************************************************************/
+    /**
+     * This property refers to a type of the agent that makes the Catalogue or Dataset available.
+     * @var \PHP_DCAT_AP\DCAT\Category
+     */
+    #[URI('http://purl.org/dc/terms/type')]
+    public Category $type;
 
     /**********************************************************************************************
-     * OPTIONAL PROPERTIES
+     * NO OPTIONAL PROPERTIES
      *********************************************************************************************/
 }

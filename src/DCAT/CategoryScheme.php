@@ -18,12 +18,19 @@ class CategoryScheme extends Resource
     /**********************************************************************************************
      * MANDATORY PROPERTIES
      *********************************************************************************************/
+    /**
+     * This property contains a name of the category scheme.
+     * May be repeated for different versions of the name
+     * @var \PHP_DCAT_AP\DCAT\Literal[]
+     */
+    #[URI('http://purl.org/dc/terms/title')]
+    public array $title = [];
 
      /**********************************************************************************************
-     * RECOMMENDED PROPERTIES
+     * NO RECOMMENDED PROPERTIES
      *********************************************************************************************/
 
     /**********************************************************************************************
-     * OPTIONAL PROPERTIES
+     * NO OPTIONAL PROPERTIES
      *********************************************************************************************/
 }
