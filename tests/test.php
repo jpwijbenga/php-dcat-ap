@@ -10,16 +10,18 @@ use PHP_DCAT_AP\DCAT\Dataset;
 use PHP_DCAT_AP\DCAT\Literal;
 use PHP_DCAT_AP\Serializer\RdfSerializer;
 
-$cat = new Catalogue('test/cat/1');
-
-$cat->title[] = new Literal('Smart Connected Supplier Network Vocabulary Hub ', 'nl');
-$cat->description = [new Literal('Test here', 'en'), new Literal('Hier NL', 'nl')];
-$cat->dataset[] = new Dataset();
-$cat->publisher = new Agent();
-$cat->hasPart[] = $cat; // check for recursion
+$cat = new Catalogue(
+    'test/cat/1',
+    [
+        'title' => [new Literal('Smart Connected Supplier Network Vocabulary Hub ', 'nl')],
+        'description' => [new Literal('Test here', 'en'), new Literal('Hier NL', 'nl')],
+        'dataset' => [new Dataset()],
+        'publisher' => new Agent(),
+    ]
+);
 
 $serializer = new RdfSerializer();
-$serializer->checkRequiredProperties = false;
+$serializer->checkRequiredProperties = true;
 
 $serializer->addSubject($cat);
 

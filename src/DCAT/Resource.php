@@ -16,9 +16,17 @@ class Resource implements DCATClassInterface
 
     protected ?string $uri;
 
-    public function __construct(?string $uri = null)
+    /**
+     * @param string|null $uri
+     * @param array<string, mixed> $properties
+     */
+    public function __construct(?string $uri = null, array $properties = [])
     {
         $this->uri = $uri;
+
+        foreach ($properties as $key => $value) {
+            $this->{$key} = $value;
+        }
     }
 
     public function getUri(): ?string
