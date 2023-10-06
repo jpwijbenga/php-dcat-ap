@@ -10,6 +10,7 @@ use PHP_DCAT_AP\DCAT\Dataset;
 use PHP_DCAT_AP\DCAT\Literal;
 use PHP_DCAT_AP\Serializer\RdfSerializer;
 
+// Method 1 (complete object)
 $cat = new Catalogue(
     'test/cat/1',
     [
@@ -19,6 +20,10 @@ $cat = new Catalogue(
         'publisher' => new Agent(),
     ]
 );
+
+// Method 2 (building step by step)
+$cat2 = new Catalogue();
+
 
 $serializer = new RdfSerializer();
 $serializer->checkRequiredProperties = true;
