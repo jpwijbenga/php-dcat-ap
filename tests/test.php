@@ -26,9 +26,10 @@ $cat2 = new Catalogue();
 
 
 $serializer = new RdfSerializer();
-$serializer->checkRequiredProperties = true;
+$serializer->checkRequiredProperties = false;
 
 $serializer->addSubject($cat);
+$serializer->addSubject($cat2);
 
 $output = $serializer->graph->serialise('ttl');
 
