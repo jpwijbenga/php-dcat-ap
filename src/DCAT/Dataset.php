@@ -91,5 +91,23 @@ class Dataset extends Resource
      * OPTIONAL PROPERTIES
      *********************************************************************************************/
 
-    // TODO
+    // TODO: complete list of optional properties
+
+    /**
+     * This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.
+     *
+     * @var \PHP_DCAT_AP\DCAT\Dataset[]
+     */
+    #[URI('http://purl.org/dc/terms/hasVersion')]
+    public array $hasVersion;
+
+    /**
+     * This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information.
+     * It is intended to point to a landing page at the original data provider, not to a page on a site of a third party,
+     * such as an aggregator.
+     *
+     * @var \PHP_DCAT_AP\DCAT\Document[]
+     */
+    #[URI('http://www.w3.org/ns/dcat#landingPage')]
+    public array $landingPage;
 }
