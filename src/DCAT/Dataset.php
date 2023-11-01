@@ -34,7 +34,7 @@ class Dataset extends Resource
     #[URI('http://purl.org/dc/terms/title')]
     public array $title;
 
-     /**********************************************************************************************
+    /**********************************************************************************************
      * RECOMMENDED PROPERTIES
      *********************************************************************************************/
     /**
@@ -102,6 +102,14 @@ class Dataset extends Resource
     public array $hasVersion;
 
     /**
+     * This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the
+     * context of the Catalogue.
+     * @var \PHP_DCAT_AP\DCAT\Literal[]
+     */
+    #[URI('http://purl.org/dc/terms/identifier')]
+    public array $identifier;
+
+    /**
      * This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information.
      * It is intended to point to a landing page at the original data provider, not to a page on a site of a third party,
      * such as an aggregator.
@@ -110,4 +118,27 @@ class Dataset extends Resource
      */
     #[URI('http://www.w3.org/ns/dcat#landingPage')]
     public array $landingPage;
+
+    /**
+     * This property contains the date of formal issuance (e.g., publication) of the Distribution.
+     * @var \PHP_DCAT_AP\DCAT\Literal
+     */
+    #[URI('http://purl.org/dc/terms/issued')]
+    public Literal $releaseDate;
+
+    /**
+     * This property contains a version number or other version designation of the Dataset.
+     * @var \PHP_DCAT_AP\DCAT\Literal
+     */
+    #[URI('http://www.w3.org/2002/07/owl#versionInfo')]
+    public Literal $version;
+
+    /**
+     * This property contains a description of the differences between this
+     * version and a previous version of the Dataset. This property can be
+     * repeated for parallel language versions of the version notes.
+     * @var \PHP_DCAT_AP\DCAT\Literal[]
+     */
+    #[URI('http://www.w3.org/2002/07/owl#versionInfo')]
+    public array $versionNotes;
 }
