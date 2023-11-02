@@ -26,7 +26,7 @@ class Distribution extends Resource
     #[URI('http://www.w3.org/ns/dcat#accessURL')]
     public array $accessURL;
 
-     /**********************************************************************************************
+    /**********************************************************************************************
      * RECOMMENDED PROPERTIES
      *********************************************************************************************/
     /**
@@ -62,5 +62,21 @@ class Distribution extends Resource
      * OPTIONAL PROPERTIES
      *********************************************************************************************/
 
-    // TODO
+    // TODO complete list of optional properties
+
+    /**
+     * This property contains a name given to the Distribution.
+     * This property can be repeated for parallel language versions of the name.
+     * @var \PHP_DCAT_AP\DCAT\Literal[]
+     */
+    #[URI('http://purl.org/dc/terms/title')]
+    public array $title;
+
+    /**
+     * This property contains a URL that gives access to a Distribution of the Dataset.
+     * The resource at the access URL may contain information about how to get the Dataset.
+     * @var \PHP_DCAT_AP\DCAT\Resource[]
+     */
+    #[URI('http://www.w3.org/ns/dcat#downloadURL')]
+    public array $downloadURL;
 }
