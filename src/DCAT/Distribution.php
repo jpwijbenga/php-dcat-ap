@@ -65,18 +65,26 @@ class Distribution extends Resource
     // TODO complete list of optional properties
 
     /**
-     * This property contains a name given to the Distribution.
-     * This property can be repeated for parallel language versions of the name.
-     * @var \PHP_DCAT_AP\DCAT\Literal[]
-     */
-    #[URI('http://purl.org/dc/terms/title')]
-    public array $title;
-
-    /**
      * This property contains a URL that gives access to a Distribution of the Dataset.
      * The resource at the access URL may contain information about how to get the Dataset.
      * @var \PHP_DCAT_AP\DCAT\Resource[]
      */
     #[URI('http://www.w3.org/ns/dcat#downloadURL')]
     public array $downloadURL;
+
+    /**
+     * This property refers to the media type of the Distribution as defined in the official
+     * register of media types managed by IANA.
+     * @var \PHP_DCAT_AP\DCAT\MediaType
+     */
+    #[URI('http://www.w3.org/ns/dcat#mediaType')]
+    public MediaType $mediaType;
+
+    /**
+     * This property contains a name given to the Distribution.
+     * This property can be repeated for parallel language versions of the name.
+     * @var \PHP_DCAT_AP\DCAT\Literal[]
+     */
+    #[URI('http://purl.org/dc/terms/title')]
+    public array $title;
 }
